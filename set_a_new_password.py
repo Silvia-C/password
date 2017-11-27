@@ -16,6 +16,7 @@ def new_password():
       if new_password == Password:
         print ("Your password has been saved!")
         return new_password
+        break
       else:
         print("Sorry the passwords do not match, try again!")
         tries +=1
@@ -29,14 +30,14 @@ def new_password():
 
 
 yn = input("Do you need to reset your password? ")
-if yn == "Y" or yn == "y":
+while yn == "Y" or yn == "y":
   old_password = input("Please enter your old password: ")
   new_password()
-  
-elif yn == "N" or yn == "n":
+if yn == "N" or yn == "n":
   print("Bye!")
 else:
   print("You can only input Y/N")
+  yn = input("Do you need to reset your password? ")
   
 
 
