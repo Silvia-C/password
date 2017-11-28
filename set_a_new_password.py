@@ -37,7 +37,6 @@ if yn == "N" or yn == "n":
   print("Bye!")
 else:
   print("You can only input Y/N")
-  yn = input("Do you need to reset your password? ")
   
 
 
